@@ -30,3 +30,11 @@ Application web en un seul fichier (`index.html`), fonctionne **hors ligne**, sa
   Ne publiez pas les sauvegardes (`backup_*.json`) : elles contiennent des noms de travailleurs.
 - الرمز السري يقفل الوصول من داخل التطبيق فقط، وليس تشفيرًا حقيقيًا للبيانات.
   Le code secret verrouille l'accès dans l'application ; ce n'est pas un chiffrement des données.
+
+## الأيقونة / Icône
+- ارفع **كل** محتويات المجلد (خصوصًا `icons/` و`manifest.webmanifest` و`sw.js` و`favicon.ico`)، وليس `index.html` وحده، وإلا ستظهر أيقونة افتراضية (حرف).
+  Publiez **tous** les fichiers (surtout `icons/`, `manifest.webmanifest`, `sw.js`, `favicon.ico`), pas seulement `index.html`.
+- بعد النشر: حدّث الصفحة بقوة (Ctrl+F5)، وإن كنت ثبّتّ اختصارًا قديمًا فاحذفه وأعد تثبيته.
+  Après publication : rechargez sans cache (Ctrl+F5) ; supprimez l'ancien raccourci et réinstallez-le.
+- التثبيت كتطبيق والعمل بدون إنترنت يتطلبان فتح الرابط عبر `https://` (GitHub Pages)، ولا يعملان من ملف محلي.
+  L'installation et le mode hors ligne nécessitent `https://` (GitHub Pages), pas un fichier local.
